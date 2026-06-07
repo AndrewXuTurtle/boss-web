@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOSS Web — Website UMKM Mulai Rp200rb</title>
+  <meta name="description" content="Jasa pembuatan website untuk UMKM dan bisnis kecil. Mulai Rp200.000. Hosting gratis, desain responsive, selesai 2-3 hari." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .hero {
+      padding: 100px 0 60px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white; text-align: center;
+    }
+    .hero-badge {
+      display: inline-block; padding: 6px 16px; border-radius: 50px;
+      background: rgba(255,255,255,0.1); font-size: 0.85rem; margin-bottom: 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 16px; letter-spacing: -0.02em; }
+    .hero h1 em { color: #3b82f6; font-style: normal; }
+    .hero p { font-size: 1.15rem; opacity: 0.85; max-width: 550px; margin: 0 auto 32px; }
+    .hero-price {
+      display: inline-flex; gap: 12px; margin-bottom: 28px; flex-wrap: wrap; justify-content: center;
+    }
+    .price-tag {
+      padding: 10px 24px; border-radius: 8px; background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .price-tag .amount { font-size: 1.5rem; font-weight: 800; color: #3b82f6; }
+    .price-tag .label { font-size: 0.8rem; opacity: 0.7; }
+    .btn {
+      display: inline-block; padding: 14px 32px; border-radius: 8px;
+      font-weight: 600; text-decoration: none; transition: 0.2s; font-size: 1rem;
+    }
+    .btn-primary { background: #3b82f6; color: white; }
+    .btn-primary:hover { background: #2563eb; transform: translateY(-2px); }
+    .btn-wa { background: #25D366; color: white; }
+    .btn-wa:hover { background: #1da851; transform: translateY(-2px); }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+
+    section { padding: 64px 0; }
+    .section-title { font-size: 1.8rem; text-align: center; margin-bottom: 40px; }
+
+    .how-it-works { background: #f8fafc; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .step { text-align: center; padding: 24px; }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; background: #3b82f6; color: white; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; margin-bottom: 12px; }
+    .step h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    .step p { color: #64748b; font-size: 0.9rem; }
+
+    .pricing-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 700px; margin: 0 auto; }
+    .pricing-card { padding: 32px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center; transition: 0.2s; }
+    .pricing-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .pricing-card.featured { border-color: #3b82f6; border-width: 2px; position: relative; }
+    .pricing-card.featured::before { content: "POPULER"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); padding: 4px 16px; background: #3b82f6; color: white; border-radius: 50px; font-size: 0.75rem; font-weight: 600; }
+    .pricing-card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+    .pricing-card .price { font-size: 2.5rem; font-weight: 800; color: #0f172a; margin: 12px 0; }
+    .pricing-card .price small { font-size: 1rem; font-weight: 400; color: #64748b; }
+    .pricing-card ul { list-style: none; margin: 20px 0; text-align: left; }
+    .pricing-card ul li { padding: 8px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
+    .pricing-card ul li::before { content: "✓ "; color: #3b82f6; font-weight: 700; }
+
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .benefit { text-align: center; padding: 24px; }
+    .benefit-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .benefit h3 { font-size: 1rem; margin-bottom: 8px; }
+    .benefit p { color: #64748b; font-size: 0.9rem; }
+
+    .portfolio-preview { background: #f8fafc; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .portfolio-item { background: white; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; }
+    .portfolio-img { height: 180px; background: linear-gradient(135deg, #dbeafe, #eff6ff); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+    .portfolio-info { padding: 16px; }
+    .portfolio-info h4 { font-size: 0.95rem; margin-bottom: 4px; }
+    .portfolio-info p { font-size: 0.8rem; color: #64748b; }
+    .portfolio-tag { display: inline-block; padding: 2px 10px; border-radius: 50px; background: #f1f5f9; font-size: 0.75rem; margin-top: 8px; }
+
+    .faq-grid { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; }
+    .faq-item h4 { font-size: 1rem; margin-bottom: 8px; cursor: pointer; }
+    .faq-item p { color: #64748b; font-size: 0.9rem; }
+
+    .cta { background: linear-gradient(135deg, #0f172a, #1e293b); color: white; text-align: center; }
+    .cta h2 { font-size: 2rem; margin-bottom: 12px; }
+    .cta p { opacity: 0.85; margin-bottom: 28px; }
+
+    .wa-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      width: 56px; height: 56px; border-radius: 50%; background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4); text-decoration: none;
+      font-size: 1.8rem; transition: 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+
+    footer { padding: 24px 0; text-align: center; background: #0f172a; color: #64748b; font-size: 0.85rem; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.8rem; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .pricing-cards { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .steps { grid-template-columns: 1fr; }
+      .hero-price { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">🚀 Jasa Pembuatan Website UMKM</div>
+    <h1>Bikin Website Bisnis <em>Rp200 Ribu</em> Aja.</h1>
+    <p>Hosting GRATIS. Desain responsive. Selesai 2-3 hari. Cocok untuk UMKM, toko online, kuliner, fashion, dan jasa.</p>
+    <div class="hero-price">
+      <div class="price-tag"><div class="amount">Rp200rb</div><div class="label">Simple / Landing</div></div>
+      <div class="price-tag"><div class="amount">Rp400rb</div><div class="label">Lengkap / Multi Halaman</div></div>
+    </div>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn btn-primary">Lihat Paket</a>
+      <a href="https://wa.me/6287897159772?text=Halo%20BOSS%20Web!%20Saya%20tertarik%20buat%20website%20untuk%20bisnis%20saya" class="btn btn-wa" target="_blank">💬 Chat WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="section-title">Cara Kerjanya</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Konsultasi</h3>
+        <p>Chat WhatsApp, bilang kebutuhan bisnis kamu. Nggak perlu ribet.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Dibikinin Draft</h3>
+        <p>Saya bikin draft website langsung — kamu bisa lihat hasilnya.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Tweak & Deal</h3>
+        <p>Suka? Tawar harga sesuai budget. Mau diubah? Bilang aja.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Launch 🚀</h3>
+        <p>Website online dalam 2-3 hari. Hosting gratis, tinggal pakai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <h2 class="section-title">Pilih Paket</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>Simple</h3>
+        <div class="price">Rp200<span small>rb</span> <small>– Rp300rb</small></div>
+        <ul>
+          <li>1 halaman landing page</li>
+          <li>Desain responsive (HP + laptop)</li>
+          <li>Hosting GRATIS (GitHub Pages)</li>
+          <li>1x revisi desain</li>
+          <li>Gratis 3 bulan maintenance</li>
+          <li>Domain opsional (biaya sendiri ~150rb/thn)</li>
+        </ul>
+        <a href="https://wa.me/6287897159772?text=Halo!%20Saya%20tertarik%20paket%20Simple%20Rp200rb%20untuk%20website%20bisnis%20saya" class="btn btn-wa" target="_blank">💬 Ambil Paket</a>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Lengkap</h3>
+        <div class="price">Rp400<span small>rb</span> <small>– Rp500rb</small></div>
+        <ul>
+          <li>Multi halaman (beranda, produk, tentang, kontak)</li>
+          <li>Desain responsive + animasi</li>
+          <li>Hosting GRATIS (GitHub Pages)</li>
+          <li>2x revisi desain</li>
+          <li>Gratis 3 bulan maintenance</li>
+          <li>Katalog produk + kontak form</li>
+          <li>Domain opsional (biaya sendiri ~150rb/thn)</li>
+        </ul>
+        <a href="https://wa.me/6287897159772?text=Halo!%20Saya%20tertarik%20paket%20Lengkap%20Rp400rb%20untuk%20website%20bisnis%20saya" class="btn btn-primary" target="_blank">💬 Ambil Paket</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="container">
+    <h2 class="section-title">Kenalan Pilih BOSS Web?</h2>
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">💸</div>
+        <h3>Termurah Se-Indonesia</h3>
+        <p>Mulai 200rb udah dapet website profesional. Nggak ada yang lebih murah dengan kualitas setara.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">⚡</div>
+        <h3>Cepet Jadi</h3>
+        <p>2-3 hari udah online. Nggak perlu nunggu berminggu-minggu seperti web developer pada umumnya.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🆓</div>
+        <h3>Hosting Gratis Selamanya</h3>
+        <p>Pakai GitHub Pages — nol biaya bulanan. Domain .com bisa diurus sendiri (~150rb/tahun).</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📱</div>
+        <h3>Responsive Semua Device</h3>
+        <p>Website otomatis rapi di HP, tablet, dan laptop. Pelanggan bisa lihat dari mana aja.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🔧</div>
+        <h3>Gratis Maintenance</h3>
+        <p>3 bulan pertama gratis maintenance. Ada masalah? Saya bantu.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📸</div>
+        <h3>Foto Produk Asli</h3>
+        <p>Saya bisa cari dan pakai foto produk asli dari internet biar websitenya profesional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-preview">
+  <div class="container">
+    <h2 class="section-title">Portfolio Terbaru</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <div class="portfolio-img">🏢</div>
+        <div class="portfolio-info">
+          <h4>PT Bumi Raya Universal</h4>
+          <p>Distributor FMCG — 5 produk, multi-page</p>
+          <span class="portfolio-tag">💎 Paket Lengkap</span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">🌿</div>
+        <div class="portfolio-info">
+          <h4>Nature Vegetarian Batam</h4>
+          <p>Restoran vegetarian — menu, lokasi, kontak</p>
+          <span class="portfolio-tag">💎 Paket Lengkap</span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">⛑️</div>
+        <div class="portfolio-info">
+          <h4>BSTC Global</h4>
+          <p>Safety training center — sertifikasi, kursus</p>
+          <span class="portfolio-tag">💎 Paket Lengkap</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Pertanyaan Umum</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>Website-nya bisa diubah-ubah nggak?</h4>
+        <p>Bisa banget! Draft yang saya kirim itu cuma contoh. Kamu bisa minta diubah sesuai keinginan — tinggal chat aja.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Hosting-nya gratis beneran?</h4>
+        <p>Iya, hosting pakai GitHub Pages — gratis selamanya. Website kamu bisa diakses 24/7. Kalau mau pake domain .com, itu bayar sendiri sekitar 150ribu per tahun.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Kalau nggak suka hasilnya?</h4>
+        <p>Nggak masalah! Saya kirim draft dulu GRATIS sebagai contoh. Kamu lihat dulu, kalau cocok baru deal. Nggak ada kewajiban.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Cara bayarnya gimana?</h4>
+        <p>Transfer Bank (BCA/Mandiri) atau QRIS. DP 50% setelah deal, lunas setelah website jadi.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Bisa bikin website toko online (jualan)?</h4>
+        <p>Untuk toko online dengan keranjang belanja dan pembayaran, itu termasuk paket Lengkap (400-500rb). Saya bisa integrasikan dengan WhatsApp untuk pemesanan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Siap Bikin Website?</h2>
+    <p>Chat sekarang, dapetin draft gratis dalam hitungan jam. Nggak ada kewajiban.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6287897159772?text=Halo%20BOSS%20Web!%20Saya%20mau%20konsultasi%20buat%20website%20bisnis%20saya" class="btn btn-wa" target="_blank">💬 Chat WhatsApp Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/6287897159772?text=Halo%20BOSS%20Web!%20Saya%20tertarik%20buat%20website" class="wa-float" target="_blank" title="Chat WhatsApp">💬</a>
+
+<footer>
+  <div class="container">
+    <p>© 2026 BOSS Web — bagian dari PT Bumi Raya Universal</p>
+    <p style="margin-top: 4px; font-size: 0.75rem;">Website UMKM mulai Rp200.000 | Hosting gratis | Selesai 2-3 hari</p>
+  </div>
+</footer>
+
+</body>
+</html>
