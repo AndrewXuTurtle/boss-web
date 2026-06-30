@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colour Salon Batam — Hair Colouring & Keratin Specialist</title>
+  <meta name="description" content="Colour Salon Batam — Hair colouring, keratin, smoothing & haircut. L'Oréal products. Nagoya, Komplek Bumi Indah Blok V No 28, Batam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+          colors: {
+            primary: '#1a1a2e',
+            accent: '#e94560',
+            rose: '#f472b6',
+            gold: '#f4a623',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0f0f1a; color: #f0f0f0; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #1a1a2e; }
+    ::-webkit-scrollbar-thumb { background: #e94560; border-radius: 3px; }
+    .hero-bg { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b35 50%, #1a1a2e 100%); position: relative; overflow: hidden; }
+    .hero-bg::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 30%, rgba(236,72,153,0.2) 0%, transparent 60%); }
+    .service-card { background: linear-gradient(135deg, rgba(236,72,153,0.05), rgba(233,69,96,0.08)); border: 1px solid rgba(236,72,153,0.15); transition: all 0.4s ease; }
+    .service-card:hover { border-color: rgba(236,72,153,0.5); transform: translateY(-6px); box-shadow: 0 20px 40px rgba(236,72,153,0.1); }
+    .whatsapp-float { animation: pulse-wa 2s ease-in-out infinite; }
+    @keyframes pulse-wa { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+    .particle { position:absolute; width:4px; height:4px; background:rgba(244,166,35,0.5); border-radius:50%; animation: float-p linear infinite; }
+    @keyframes float-p { 0%{transform:translateY(100vh);opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{transform:translateY(-10vh);opacity:0} }
+  </style>
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="particle" style="left:10%;animation-duration:12s;animation-delay:0s"></div>
+    <div class="particle" style="left:25%;animation-duration:15s;animation-delay:3s"></div>
+    <div class="particle" style="left:50%;animation-duration:10s;animation-delay:6s"></div>
+    <div class="particle" style="left:75%;animation-duration:14s;animation-delay:2s"></div>
+    <div class="particle" style="left:90%;animation-duration:11s;animation-delay:8s"></div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-400 to-accent flex items-center justify-center font-bold text-sm">C</div>
+        <span class="font-bold text-lg">Colour Salon <span class="text-rose-400">Batam</span></span>
+      </div>
+      <a href="https://wa.me/628127766698?text=Halo%20Colour%20Salon" class="flex items-center gap-2 bg-rose-500 hover:bg-rose-600 px-5 py-2.5 rounded-full font-semibold text-sm transition-all">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.542 4.108 1.487 5.821L0 24l6.387-1.675A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.132 0-4.177-.664-5.904-1.803l-.424-.237-4.346 1.14 1.163-4.249-.249-.418A9.94 9.94 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Hubungi Kami
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-20 relative">
+    <div class="max-w-5xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center relative z-10">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/20 text-rose-400 px-4 py-1.5 rounded-full text-xs font-semibold mb-6">
+          <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+          L'Oreal Certified Partner
+        </div>
+        <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+          Hair Colouring<br>
+          <span class="bg-gradient-to-r from-rose-400 via-pink-400 to-accent bg-clip-text text-transparent">Tanpa Ribet.</span>
+        </h1>
+        <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+          Ash brown, soft highlight, keratin, smoothing — semua treatment rambut dengan produk <strong class="text-white">L'Oréal</strong>. Dilayani rambut impian Anda dengan teknik profesional.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-10">
+          <a href="https://wa.me/628127766698?text=Halo%20Colour%20Salon,%20saya%20mau%20booking" class="px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full font-bold hover:opacity-90 transition flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Booking Sekarang
+          </a>
+          <a href="#layanan" class="px-8 py-4 border border-white/10 hover:bg-white/5 rounded-full font-semibold transition">Lihat Layanan</a>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <span class="flex items-center gap-1"><span class="w-2 h-2 bg-green-400 rounded-full"></span> Buka setiap hari 10:00 — 19:30</span>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="relative rounded-3xl overflow-hidden border border-rose-500/20 shadow-2xl shadow-rose-500/10">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80" alt="Colour Salon Interior" class="w-full aspect-[4/5] object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+            <div class="text-white text-lg font-bold">Interior Modern & Nyaman</div>
+          </div>
+        </div>
+        <!-- Floating badge -->
+        <div class="absolute -bottom-4 -left-4 bg-primary border border-rose-500/20 rounded-2xl p-4 shadow-xl">
+          <div class="text-xs text-gray-400 mb-1">Rating Google</div>
+          <div class="flex items-center gap-1 text-yellow-400 font-bold text-lg">★ 4.8</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="layanan" class="py-20 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <span class="text-rose-400 text-sm font-semibold tracking-widest uppercase">Layanan Kami</span>
+        <h2 class="text-3xl font-bold mt-3">Treatment Pilihan</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-rose-400 text-2xl">💇</div>
+          <h3 class="font-bold text-lg mb-2">Hair Colouring</h3>
+          <p class="text-gray-400 text-sm">Ash brown, soft highlight, balayage, full colour — L'Oréal premium products only.</p>
+          <div class="mt-4 text-rose-400 font-bold text-sm">Mulai Rp 150.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-rose-400 text-2xl">✨</div>
+          <h3 class="font-bold text-lg mb-2">Keratin & Smoothing</h3>
+          <p class="text-gray-400 text-sm">Rambut lurus silky, anti-frizz, hasil natural. Treatment 2-4 jam, tahan 3-6 bulan.</p>
+          <div class="mt-4 text-rose-400 font-bold text-sm">Mulai Rp 300.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-rose-400 text-2xl">✂️</div>
+          <h3 class="font-bold text-lg mb-2">Hair Cut & Styling</h3>
+          <p class="text-gray-400 text-sm">Potong rambut + styling sesuai bentuk wajah. Konsultasi gratis.</p>
+          <div class="mt-4 text-rose-400 font-bold text-sm">Mulai Rp 35.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-rose-400 text-2xl">💆</div>
+          <h3 class="font-bold text-lg mb-2">Hair Treatment</h3>
+          <p class="text-gray-400 text-sm">Creambath, hair spa, scalp treatment — untuk rambut sehat dan berkilau.</p>
+          <div class="mt-4 text-rose-400 font-bold text-sm">Mulai Rp 75.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-rose-400 text-2xl">🌸</div>
+          <h3 class="font-bold text-lg mb-2">Paket Paket Lengkap</h3>
+          <p class="text-gray-400 text-sm">Colour + cut + treatment — all-in-one package untuk hasil terbaik.</p>
+          <div class="mt-4 text-rose-400 font-bold text-sm">Mulai Rp 400.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-rose-400 text-2xl">👰</div>
+          <h3 class="font-bold text-lg mb-2">Wedding & Event</h3>
+          <p class="text-gray-400 text-sm">Hair do, makeup, bridal packages — untuk momen spesial Anda.</p>
+          <div class="mt-4 text-rose-400 font-bold text-sm">Mulai Rp 500.000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Strip -->
+  <section class="py-12 px-6 relative z-10 bg-primary/50">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold">Hasil Treatment Kami</h2>
+        <p class="text-gray-400 text-sm mt-1">Before & after dari pelanggan Colour Salon</p>
+      </div>
+      <div class="grid grid-cols-4 gap-3">
+        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?w=300&q=80" alt="Hair Colouring" class="rounded-xl h-40 w-full object-cover hover:opacity-80 transition" />
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=300&q=80" alt="Hair Treatment" class="rounded-xl h-40 w-full object-cover hover:opacity-80 transition" />
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300&q=80" alt="Haircut" class="rounded-xl h-40 w-full object-cover hover:opacity-80 transition" />
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=300&q=80" alt="Hair Styling" class="rounded-xl h-40 w-full object-cover hover:opacity-80 transition" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Info & Map -->
+  <section class="py-20 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Kunjungi Kami</h2>
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-rose-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-rose-400 text-lg">📍</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Alamat</div>
+              <div class="text-gray-400 text-sm">Komplek Bumi Indah Blok V No 28<br>Nagoya, Batam, Kepulauan Riau 29432</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-rose-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-rose-400 text-lg">🕐</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Jam Operasional</div>
+              <div class="text-gray-400 text-sm">Setiap hari: 10:00 — 19:30 WIB</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-rose-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-rose-400 text-lg">📞</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Telepon & WhatsApp</div>
+              <a href="tel:0778457727" class="text-gray-400 text-sm hover:text-white">0778 457727</a> ·
+              <a href="https://wa.me/628127766698" class="text-rose-400 text-sm hover:text-rose-300">0812 7766 698</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-rose-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-rose-400 text-lg">📸</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Instagram</div>
+              <a href="https://instagram.com/coloursalonbatam" target="_blank" class="text-rose-400 text-sm hover:text-rose-300">@coloursalonbatam</a>
+            </div>
+          </div>
+          <a href="https://wa.me/628127766698?text=Halo%20Colour%20Salon,%20saya%20mau%20tanya%20treatment" class="mt-6 flex items-center justify-center gap-3 w-full py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 rounded-xl font-bold transition text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Chat WhatsApp Sekarang
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0!2d104.0455!3d1.1300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMDcnNDguMCJTIDEwNMKwMDInNDguMCJF!5e0!3m2!1sen!2sid!4v1700000000000" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 px-6 relative z-10 bg-gradient-to-r from-rose-900/50 to-pink-900/30">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-4">Siap Transformation<br><span class="text-rose-400">Rambut Impian Anda?</span></h2>
+      <p class="text-gray-400 mb-8">Booking sekarang via WhatsApp — free konsultasi dan cek harga treatment.</p>
+      <a href="https://wa.me/628127766698?text=Halo%20Colour%20Salon,%20saya%20mau%20booking%20treatment" class="inline-flex items-center gap-3 px-10 py-5 bg-white text-primary rounded-full font-bold text-lg hover:bg-gray-100 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        Chat Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md bg-gradient-to-br from-rose-400 to-accent flex items-center justify-center font-bold text-xs">C</div>
+        <span class="font-bold text-sm">Colour Salon <span class="text-rose-400">Batam</span></span>
+      </div>
+      <p class="text-gray-600 text-sm">© 2025 Colour Salon Batam. L'Oréal Certified Partner.</p>
+      <div class="flex items-center gap-4 text-gray-500">
+        <a href="https://instagram.com/coloursalonbatam" class="hover:text-white transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://wa.me/628127766698" class="hover:text-white transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/628127766698?text=Halo%20Colour%20Salon,%20saya%20mau%20booking" class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl transition-all">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
