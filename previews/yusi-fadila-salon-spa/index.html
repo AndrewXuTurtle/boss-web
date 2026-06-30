@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yusi Fadila Salon Spa — Orchard Park & Sahid Hotel, Batam Center</title>
+  <meta name="description" content="Yusi Fadila Salon Spa — Salon & spa profesional di Orchard Park & Sahid Hotel, Batam Center. Hair treatment, keratin, spa, perawatan tubuh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+          colors: {
+            primary: '#1a1a2e',
+            accent: '#d4af37',
+            emerald: '#10b981',
+            cream: '#fdf8f0',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0f0f1a; color: #f0f0f0; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #1a1a2e; }
+    ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 3px; }
+    .hero-bg { background: linear-gradient(135deg, #1a1a2e 0%, #14241f 50%, #1a1a2e 100%); position: relative; overflow: hidden; }
+    .hero-bg::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 30%, rgba(16,185,129,0.15) 0%, transparent 60%); }
+    .service-card { background: linear-gradient(135deg, rgba(16,185,129,0.05), rgba(212,175,55,0.05)); border: 1px solid rgba(16,185,129,0.15); transition: all 0.4s ease; }
+    .service-card:hover { border-color: rgba(16,185,129,0.5); transform: translateY(-6px); box-shadow: 0 20px 40px rgba(16,185,129,0.08); }
+    .whatsapp-float { animation: pulse-wa 2s ease-in-out infinite; }
+    @keyframes pulse-wa { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+    .particle { position:absolute; width:4px; height:4px; background:rgba(212,175,55,0.5); border-radius:50%; animation: float-p linear infinite; }
+    @keyframes float-p { 0%{transform:translateY(100vh);opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{transform:translateY(-10vh);opacity:0} }
+    .location-badge { background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(16,185,129,0.05)); border: 1px solid rgba(16,185,129,0.2); }
+  </style>
+</head>
+<body>
+
+  <!-- Particles -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="particle" style="left:15%;animation-duration:13s;animation-delay:0s"></div>
+    <div class="particle" style="left:40%;animation-duration:11s;animation-delay:4s"></div>
+    <div class="particle" style="left:65%;animation-duration:14s;animation-delay:2s"></div>
+    <div class="particle" style="left:85%;animation-duration:12s;animation-delay:7s"></div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-accent flex items-center justify-center font-bold text-sm">Y</div>
+        <span class="font-bold text-lg">Yusi Fadila <span class="text-emerald-400">Salon Spa</span></span>
+      </div>
+      <a href="https://wa.me/6281990389139?text=Halo%20Yusi%20Fadila%20Salon%20Spa" class="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 px-5 py-2.5 rounded-full font-semibold text-sm transition-all">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        Hubungi Kami
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-20 relative">
+    <div class="max-w-5xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center relative z-10">
+      <div>
+        <!-- Location badges -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="location-badge text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold">📍 Orchard Park, Batam Center</span>
+          <span class="location-badge text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold">📍 Sahid Hotel, Batam Center</span>
+        </div>
+        <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+          Salon & Spa<br>
+          <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Terapi Cantik.</span>
+        </h1>
+        <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+          Perawatan rambut, spa tubuh, keratin, dan treatment kecantikan profesional. Dua lokasi strategis di <strong class="text-white">Batam Center</strong> — mudah diakses dan nyaman.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-10">
+          <a href="https://wa.me/6281990389139?text=Halo%20Yusi%20Fadila,%20saya%20mau%20booking%20treatment" class="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full font-bold hover:opacity-90 transition flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Booking Sekarang
+          </a>
+          <a href="#layanan" class="px-8 py-4 border border-white/10 hover:bg-white/5 rounded-full font-semibold transition">Lihat Layanan</a>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <span class="flex items-center gap-1"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Buka Setiap Hari</span>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="relative rounded-3xl overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80" alt="Yusi Fadila Salon Spa Interior" class="w-full aspect-[4/5] object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+            <div class="text-white text-lg font-bold">Suasana Nyaman & Bersih</div>
+          </div>
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-primary border border-emerald-500/20 rounded-2xl p-4 shadow-xl">
+          <div class="text-xs text-gray-400 mb-1">2 Lokasi</div>
+          <div class="text-emerald-400 font-bold">Orchard Park<br>& Sahid Hotel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="layanan" class="py-20 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <span class="text-emerald-400 text-sm font-semibold tracking-widest uppercase">Layanan Kami</span>
+        <h2 class="text-3xl font-bold mt-3">Treatment Lengkap</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-400 text-2xl">💇‍♀️</div>
+          <h3 class="font-bold text-lg mb-2">Hair Treatment</h3>
+          <p class="text-gray-400 text-sm">Creambath, hair spa, scalp treatment, masker rambut untuk rambut sehat dan berkilau.</p>
+          <div class="mt-4 text-emerald-400 font-bold text-sm">Mulai Rp 75.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-400 text-2xl">✨</div>
+          <h3 class="font-bold text-lg mb-2">Keratin & Smoothing</h3>
+          <p class="text-gray-400 text-sm">Rambut lurus silky, anti-frizz, hasil natural. Treatment profesional, hasil tahan lama.</p>
+          <div class="mt-4 text-emerald-400 font-bold text-sm">Mulai Rp 300.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-400 text-2xl">💆</div>
+          <h3 class="font-bold text-lg mb-2">Body Spa & Massage</h3>
+          <p class="text-gray-400 text-sm">Pijat tradisional, body scrub, aromatherapy — rileks dan menyegarkan.</p>
+          <div class="mt-4 text-emerald-400 font-bold text-sm">Mulai Rp 150.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-400 text-2xl">✂️</div>
+          <h3 class="font-bold text-lg mb-2">Haircut & Styling</h3>
+          <p class="text-gray-400 text-sm">Potong rambut dan styling sesuai bentuk wajah. Konsultasi style gratis.</p>
+          <div class="mt-4 text-emerald-400 font-bold text-sm">Mulai Rp 35.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-400 text-2xl">🧖</div>
+          <h3 class="font-bold text-lg mb-2">Facial & Skincare</h3>
+          <p class="text-gray-400 text-sm">Facial basic, whitening facial, anti-aging treatment untuk kulit wajah bersih.</p>
+          <div class="mt-4 text-emerald-400 font-bold text-sm">Mulai Rp 100.000</div>
+        </div>
+        <div class="service-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-400 text-2xl">👰</div>
+          <h3 class="font-bold text-lg mb-2">Bridal Package</h3>
+          <p class="text-gray-400 text-sm">Hair do, makeup bridal, full paket pengantin — momen spesial Anda jadi sempurna.</p>
+          <div class="mt-4 text-emerald-400 font-bold text-sm">Mulai Rp 750.000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two Locations -->
+  <section class="py-16 px-6 relative z-10 bg-primary/50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold">2 Lokasi Strategis</h2>
+        <p class="text-gray-400 text-sm mt-1">Batam Center — mudah diakses dari mana saja</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-primary rounded-2xl border border-emerald-500/10 p-6">
+          <div class="text-emerald-400 font-bold mb-2 flex items-center gap-2">📍 Lokasi 1</div>
+          <h3 class="font-bold text-lg mb-2">Orchard Park</h3>
+          <p class="text-gray-400 text-sm mb-3">Orchard Park, Batam Center, Kota Batam</p>
+          <a href="tel:081990389139" class="text-accent text-sm font-semibold hover:underline">☎️ 0819 9038 9139</a>
+        </div>
+        <div class="bg-primary rounded-2xl border border-emerald-500/10 p-6">
+          <div class="text-emerald-400 font-bold mb-2 flex items-center gap-2">📍 Lokasi 2</div>
+          <h3 class="font-bold text-lg mb-2">Sahid Hotel</h3>
+          <p class="text-gray-400 text-sm mb-3">Depan Lobby Sahid Hotel, Raffles City Block C1, Batam Center</p>
+          <a href="tel:082279531356" class="text-accent text-sm font-semibold hover:underline">☎️ 0822 7953 1356</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info & Map -->
+  <section class="py-20 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Hubungi Kami</h2>
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-emerald-400 text-lg">📞</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">WhatsApp (Orchard Park)</div>
+              <a href="https://wa.me/6281990389139" class="text-emerald-400 text-sm hover:text-emerald-300">0819 9038 9139</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-emerald-400 text-lg">📞</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">WhatsApp (Sahid Hotel)</div>
+              <a href="https://wa.me/6282279531356" class="text-emerald-400 text-sm hover:text-emerald-300">0822 7953 1356</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-emerald-400 text-lg">📍</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Alamat</div>
+              <div class="text-gray-400 text-sm">Orchard Park & Sahid Hotel<br>Raffles City Block C1, Batam Center</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-emerald-400 text-lg">📸</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">TikTok</div>
+              <a href="https://tiktok.com/@yusifadilasalon" target="_blank" class="text-emerald-400 text-sm hover:text-emerald-300">@yusifadilasalon</a>
+            </div>
+          </div>
+          <a href="https://wa.me/6281990389139?text=Halo%20Yusi%20Fadila,%20saya%20mau%20booking%20treatment" class="mt-4 flex items-center justify-center gap-3 w-full py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 rounded-xl font-bold transition text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Chat WhatsApp — Orchard Park
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0!2d104.0455!3d1.1300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMDcnNDguMCJTIDEwNMKwMDInNDguMCJF!5e0!3m2!1sen!2sid!4v1700000000000" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-6 relative z-10 bg-gradient-to-r from-emerald-900/50 to-teal-900/30">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-4">Siap Merawat<br><span class="text-emerald-400">Dirimu?</span></h2>
+      <p class="text-gray-400 mb-8">Hubungi kami via WhatsApp — booking treatment atau tanya harga gratis!</p>
+      <a href="https://wa.me/6281990389139?text=Halo%20Yusi%20Fadila,%20saya%20mau%20booking" class="inline-flex items-center gap-3 px-10 py-5 bg-white text-primary rounded-full font-bold text-lg hover:bg-gray-100 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        Chat Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md bg-gradient-to-br from-emerald-400 to-accent flex items-center justify-center font-bold text-xs">Y</div>
+        <span class="font-bold text-sm">Yusi Fadila <span class="text-emerald-400">Salon Spa</span></span>
+      </div>
+      <p class="text-gray-600 text-sm">© 2025 Yusi Fadila Salon Spa. Batam Center.</p>
+      <a href="https://tiktok.com/@yusifadilasalon" class="hover:text-white transition text-gray-500 text-sm">TikTok @yusifadilasalon</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281990389139?text=Halo%20Yusi%20Fadila,%20saya%20mau%20booking" class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl transition-all">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
